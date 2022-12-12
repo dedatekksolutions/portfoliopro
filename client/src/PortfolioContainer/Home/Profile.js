@@ -1,5 +1,6 @@
 import React from 'react';
 import Typical from 'react-typical';
+import './Profile.css'
 
 export default function Profile() {
   return (
@@ -7,22 +8,23 @@ export default function Profile() {
       <div className='profile-parent'>
         <div className='profile-details'>
           <div className='colz'>
-            <div className='colz-icon'></div>
-            <a href='https://www.facebook.com/'>
-              <i className='fa fa-facebook-square'></i>
-            </a>
-            <a href='https://www.google.com/'>
-              <i className='fa fa-google-plus-square'></i>
-            </a>
-            <a href='https://www.instagram.com/'>
-              <i className='fa fa-instagram'></i>
-            </a>
-            <a href='https://www.youtube.com/'>
-              <i className='fa fa-youtube-square'></i>
-            </a>
-            <a href='https://www.twitter.com/'>
-              <i className='fa fa-twitter'></i>
-            </a>
+            <div className='colz-icon'>
+              <a href='https://www.facebook.com/'>
+                <i className='fa fa-facebook-square'></i>
+              </a>
+              <a href='https://www.google.com/'>
+                <i className='fa fa-google-plus-square'></i>
+              </a>
+              <a href='https://www.instagram.com/'>
+                <i className='fa fa-instagram'></i>
+              </a>
+              <a href='https://www.youtube.com/'>
+                <i className='fa fa-youtube-square'></i>
+              </a>
+              <a href='https://www.twitter.com/'>
+                <i className='fa fa-twitter'></i>
+              </a>
+            </div>
           </div>
 
           <div className='profile-details-name'>
@@ -40,15 +42,15 @@ export default function Profile() {
                 <Typical
                   loop={Infinity}
                   steps={[
-                    'Enthusiastic Dev 🧐',
+                    'Enthusiastic Dev 💻',
                     1000,
-                    'Full Stack Developer🤬',
+                    'JAVA 🥞',
                     1000,
-                    'MERN Stack Dev 💪',
+                    'CPP 👨‍💻',
                     1000,
-                    'Cross Platform v 🛀',
+                    'Android Dev 📱',
                     1000,
-                    'React/React Native Dev 🏂',
+                    'React/React Native Dev 🌐',
                     1000,
                   ]}
                 />
@@ -64,9 +66,11 @@ export default function Profile() {
               {''}
               Hire Me{''}
             </button>
+            <button className='btn highlighted-btn'>
             <a href='Tech\ CV\ 180122.pdf' download={'Tech CV 180122.pdf'}>
               Get Resume
             </a>
+            </button>
           </div>
         </div>
         <div className='profile-picture'>
