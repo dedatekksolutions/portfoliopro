@@ -31,17 +31,40 @@ export default function Profile() {
             </div>
             <div className="profile-details-role">
               <div className="primary-text">
-                {""}
-                <h1>
+                <span>
                   {""}
-                  <Typical loop={Infinity} steps={[
-                    "Enthusiastic Dev 😀", 1000,
-                    "Full Stack Dev ☺️ ", 1000,
-                    "MERN Stack Dev 🫥", 1000,
-                    "Cross Platform v 🤩", 1000,
-                    "React/React Native Dev 🤩", 1000,
-                    ]} />
-                </h1>
+                  <h1>
+                    {""}
+                    <Typical
+                      loop={Infinity}
+                      steps={[
+                        "Enthusiastic Dev 😀",
+                        1000,
+                        "Full Stack Dev ☺️ ",
+                        1000,
+                        "MERN Stack Dev 🫥",
+                        1000,
+                        "Cross Platform v 🤩",
+                        1000,
+                        "React/React Native Dev 🤩",
+                        1000,
+                      ]}
+                    />
+                  </h1>
+                  <span className="profile-role-tagline">
+                    Knack of building applications with front and back end
+                    operations.
+                  </span>
+                </span>
+              </div>
+              <div className="profile-options">
+                <button className="btn primary-btn">
+                  {""}
+                  Hire Me{" "}
+                </button>
+                <a href="ehizcv.pdf" download="Ehiedu ehizcv.pdf">
+                  <button className="btn highlighted-btn">Get Resume</button>
+                </a>
               </div>
             </div>
           </div>
