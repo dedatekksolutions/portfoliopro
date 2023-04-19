@@ -30,7 +30,7 @@ export default function Profile() {
             <span className="primary-text">
               {""}
               Hello, I'm{" "}
-              <span className="highlighted-text">Boozie T Badarse</span>
+              <span className="highlighted-text">Thomas Lambert</span>
             </span>
           </div>
           <div className="profile-details-role">
