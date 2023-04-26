@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   TOTAL_SCREENS,
   GET_SCREEN_INDEX,
@@ -22,18 +22,18 @@ export default function Header() {
   );
 
   const getHeaderOptions = () => {
-    return TOTAL_SCREENS.map((screen, i) => (
+    return TOTAL_SCREENS.map((Screen, i) => (
       <div
-        key={screen.screen_name}
-        className={getHeaderOptionsClass(i)}
-        onClick={() => switchScreen(i, screen)}
+        key={Screen.screen_name}
+        className={getHeaderOptionsClasses(i)}
+        onClick={() => switchScreen(i, Screen)}
       >
-        <span>{screen.screen_name}</span>
+        <span>{Screen.screen_name}</span>
       </div>
     ));
   };
 
-  const getHeaderOptionsClass = (index) => {
+  const getHeaderOptionsClasses = (index) => {
     let classes = "header-option";
     if (index < TOTAL_SCREENS.length - 1) classes += "header-option-separator";
 
@@ -50,10 +50,16 @@ export default function Header() {
     setShowHeaderOptions(false);
   };
 
+  useEffect(() => {
+    return () => {
+      currentScreenSubscription.unsubscribe();
+    };
+  }, [currentScreenSubscription]);
+
   return (
     <div>
       <div
-        className="headper-option"
+        className="headper-container"
         onClick={() => setShowHeaderOptions(!showHeaderOptions)}
       >
         <div className="header-parent">
