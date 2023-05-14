@@ -55,17 +55,17 @@ export default function AboutMe(props) {
               {SCREEN_CONSTANTS.highlights.heading}
             </span>
             {renderHighlights()}
+            <div className="about-me-options">
+              {" "}
+              <button className="btn primary-btn">
+                {""}
+                Hire Me{" "}
+              </button>
+              <a href="ehizcv.pdf" download="Ehiedu ehizcv.pdf">
+                <button className="btn highlighted-btn">Get Resume</button>
+              </a>
+            </div>
           </div>
-        </div>
-        <div className="about-me-options">
-          {" "}
-          <button className="btn primary-btn">
-            {""}
-            Hire Me{" "}
-          </button>
-          <a href="ehizcv.pdf" download="Ehiedu ehizcv.pdf">
-            <button className="btn highlighted-btn">Get Resume</button>
-          </a>
         </div>
       </div>
     </div>
