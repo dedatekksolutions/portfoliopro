@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
-import ScrollService from "../../utilities/scrollService";
+import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
+import "./AboutMe.css";
 
 export default function AboutMe(props) {
   let fadeInScreenHandler = (screen) => {
@@ -53,8 +54,8 @@ export default function AboutMe(props) {
             <span className="about-me-heading">
               {SCREEN_CONSTANTS.highlights.heading}
             </span>
+            {renderHighlights()}
           </div>
-          {renderHighlights()}
         </div>
         <div className="about-me-options">
           {" "}
